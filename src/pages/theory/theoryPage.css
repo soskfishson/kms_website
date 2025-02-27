@@ -1,0 +1,89 @@
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    padding: 0;
+}
+
+.theory-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+}
+
+.theory-section h1,
+.theory-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.theory-section p {
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0.2rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.theory-section ul {
+    max-width: 800px;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.formula {
+    display: block;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.image-placeholder {
+    border: 2px dashed #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    margin: 0;
+}
+
+.image-placeholder img {
+    height: 20vh;
+}
+
+.back-button {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .theory-section h1 { font-size: 2.4rem; }
+    .theory-section h2 { font-size: 2rem; }
+    .theory-section p, .theory-section ul li { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+    .theory-section h1 { font-size: 2rem; }
+    .theory-section h2 { font-size: 1.8rem; }
+    .theory-section p, .theory-section ul li { font-size: 0.85rem; }
+}
+
+.image-placeholder img {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom img {
+    transform: scale(4.0);
+}
