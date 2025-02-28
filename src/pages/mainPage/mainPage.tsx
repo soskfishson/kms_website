@@ -12,22 +12,24 @@ export const MainPage = () => {
                 <div className="background-panel">
                     <img src={backGroundPhoto} alt="Background" />
                 </div>
-                <header className="header">
-                    <h1 className="title">Симулятор кондиционера</h1>
-                    <p className="subtitle">
-                        Ознакомьтесь с теоретическими сведениями, узнайте структуру установки и
-                        запустите симулятор.
-                    </p>
-                </header>
-                <div className="menu">
-                    <Button
-                        action={() => {
-                            navigate('/theory');
-                        }}
-                        text="Теоретические сведения"
-                    />
-                    <Button action={() => navigate(`/structure`)} text="Структура установки" />
-                    <Button action={() => navigate(`/simulation`)} text="Симулятор установки" />
+                <div>
+                    <header className="header">
+                        <h1 className="title">Симулятор кондиционера</h1>
+                        <p className="subtitle">
+                            Ознакомьтесь с теоретическими сведениями, узнайте структуру установки и
+                            запустите симулятор.
+                        </p>
+                    </header>
+                    <div className="menu">
+                        <Button
+                            action={() => {
+                                navigate('/theory');
+                            }}
+                            text="Теоретические сведения"
+                        />
+                        <Button action={() => navigate(`/structure`)} text="Структура установки" />
+                        <Button action={() => navigate(`/simulation`)} text="Симулятор установки" />
+                    </div>
                 </div>
             </section>
 

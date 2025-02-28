@@ -15,8 +15,8 @@
     align-items: center;
     padding: 2rem;
     box-sizing: border-box;
-    overflow-y: auto;
     background: linear-gradient(135deg, #ece9e6, #ffffff);
+    overflow: hidden;
 }
 
 .theory-section h1,

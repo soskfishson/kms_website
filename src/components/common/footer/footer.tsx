@@ -3,7 +3,8 @@ import './footer.css';
 export const Footer = () => {
     return (
         <footer className="footer">
-            <p>© 2025 Симулятор кондиционера. Все права защищены.</p>
+            <p>Иванов Павел, ИСиТ к3 г1</p>
+            <p>© 2025 Симулятор кондиционера.</p>
         </footer>
     );
 };
